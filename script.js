@@ -101,8 +101,11 @@ function themeLight() {
     title.style.color = 'black';
     number.style.color = 'black';
     footer.style.color = 'black';
-    footerImg.src = './icons/GitHub-Mark-32px.png';
 
+    setTimeout(() => {
+        footerImg.src = './icons/GitHub-Mark-32px.png';
+    }, 550);
+    
     changeThemeClicked = true;
     themeLigthMode = true;
     numberColor()
@@ -118,7 +121,10 @@ function themeDark() {
     title.style.color = 'white';
     number.style.color = 'white';
     footer.style.color = 'white';
-    footerImg.src = './icons/GitHub-Mark-Light-32px.png';
+
+    setTimeout(() => {
+        footerImg.src = './icons/GitHub-Mark-Light-32px.png';
+    }, 400);
 
     changeThemeClicked = false;
     themeLigthMode = false;
